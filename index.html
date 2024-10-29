@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Red Social</title>
+</head>
+
+<body>
+
+    <h1>Red Social</h1>
+    <h2>¿Que estas pensando?</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()">
+        <label for="postTitle">Titulo: </label>
+        <input type="text" id="postTitle" required>
+        <label for="postBody">Comentario: </label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <ul id="postList"></ul>
+
+
+
+
+
+
+
+
+
+
+    <!--Archivo JavaScript-->
+    <script src="script.js"></script>
+</body>
+
+</html>
